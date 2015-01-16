@@ -1,0 +1,3 @@
+FILE(GLOB_RECURSE src "*.cpp" "*.h")
+ADD_EXECUTABLE(PlayPen WIN32 ${src})
+TARGET_LINK_LIBRARIES(PlayPen ${DEMO_LIBS})

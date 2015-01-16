@@ -1,0 +1,3 @@
+FILE(GLOB_RECURSE hdr "*.h")
+
+INSTALL(FILES ${hdr} DESTINATION include)

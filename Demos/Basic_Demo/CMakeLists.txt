@@ -1,0 +1,3 @@
+FILE(GLOB_RECURSE src "*.cpp" "*.h")
+ADD_EXECUTABLE(Basic_Demo WIN32 ${src})
+TARGET_LINK_LIBRARIES(Basic_Demo ${DEMO_LIBS})

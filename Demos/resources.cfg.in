@@ -1,0 +1,10 @@
+# Resource locations to be added to the default path
+[General]
+FileSystem=${CMAKE_CURRENT_SOURCE_DIR}/Media
+FileSystem=${CMAKE_CURRENT_SOURCE_DIR}/Media/Audio
+FileSystem=${CMAKE_CURRENT_SOURCE_DIR}/Media/Gui
+FileSystem=${CMAKE_CURRENT_SOURCE_DIR}/Media/Materials/Scripts
+FileSystem=${CMAKE_CURRENT_SOURCE_DIR}/Media/Materials/Textures
+FileSystem=${CMAKE_CURRENT_SOURCE_DIR}/Media/Models
+Zip=${CMAKE_CURRENT_SOURCE_DIR}/Media/Materials/Textures/cubemapsJS.zip
+Zip=${CMAKE_CURRENT_SOURCE_DIR}/Media/Materials/bguires.zip 

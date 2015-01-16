@@ -1,0 +1,15 @@
+INCLUDE(CopyInstallDLLs)
+COPYINSTALL_DLLS("${Boost_INCLUDE_DIR}/../../lib" . TRUE TRUE FALSE boost_system boost_filesystem boost_thread boost_asio)
+COPYINSTALL_DLLS("${OGRE_HOME}/bin/release" . TRUE TRUE FALSE *)
+
+SET(DEMO_LIBS ${OGRE_Overlay_LIBRARIES} ${OIS_LIBRARIES} OgreAL)
+
+CONFIGURE_FILE("${CMAKE_CURRENT_SOURCE_DIR}/plugins.cfg.in" "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/plugins.cfg")
+CONFIGURE_FILE("${CMAKE_CURRENT_SOURCE_DIR}/resources.cfg.in" "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/resources.cfg")
+
+ADD_SUBDIRECTORY(Basic_Demo)
+ADD_SUBDIRECTORY(Directional_Demo)
+ADD_SUBDIRECTORY(Doppler_Demo)
+ADD_SUBDIRECTORY(ManySources_Demo)
+ADD_SUBDIRECTORY(MultiChannel_Demo)
+ADD_SUBDIRECTORY(PlayPen)
