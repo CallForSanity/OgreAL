@@ -6,7 +6,7 @@ compiler:
 
 before_script:  
     - sudo apt-get update -qq
-    - sudo apt-get install -y libogre-dev libopenal-dev
+    - sudo apt-get install -y libogre-dev libois-dev libopenal-dev
     - mkdir build
     - cd build
     - cmake ..
