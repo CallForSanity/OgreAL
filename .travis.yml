@@ -6,7 +6,7 @@ compiler:
 
 before_script:  
     - sudo apt-get update -qq
-    - sudo apt-get install -y libogre-1.9-dev libois-dev libopenal-dev
+    - sudo apt-get install -y libogre-1.8-dev libois-dev libopenal-dev
     - sudo apt-get install -y libogg-dev libvorbis-dev
     - mkdir build
     - cd build
